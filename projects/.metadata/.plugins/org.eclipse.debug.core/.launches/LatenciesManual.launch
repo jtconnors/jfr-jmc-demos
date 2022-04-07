@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+    <booleanAttribute key="jmc.jfr.launching.JFR.AUTO_OPEN" value="false"/>
+    <booleanAttribute key="jmc.jfr.launching.JFR.CONTINUOUS" value="true"/>
+    <stringAttribute key="jmc.jfr.launching.JFR.DELAY" value="0 s"/>
+    <stringAttribute key="jmc.jfr.launching.JFR.DURATION" value="1 min"/>
+    <booleanAttribute key="jmc.jfr.launching.JFR.ENABLED" value="true"/>
+    <stringAttribute key="jmc.jfr.launching.JFR.FILENAME" value="\Recordings\flight_recording.jfr"/>
+    <stringAttribute key="jmc.jfr.launching.JFR.NAME" value="My Recording"/>
+    <booleanAttribute key="jmc.jfr.launching.JFR.ORACLE_JDK_LESS_THAN_11" value="false"/>
+    <stringAttribute key="jmc.jfr.launching.JFR.SETTINGS" value=""/>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+        <listEntry value="/03a_JFR_Latencies_manual/src/se/hirt/jmc/tutorial/latencies/LatenciesManual.java"/>
+    </listAttribute>
+    <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+        <listEntry value="1"/>
+    </listAttribute>
+    <mapAttribute key="org.eclipse.debug.core.preferred_launchers">
+        <mapEntry key="[run]" value="org.eclipse.jdt.launching.localJavaApplication"/>
+    </mapAttribute>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_ATTR_USE_ARGFILE" value="false"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_EXCLUDE_TEST_CODE" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_SHOW_CODEDETAILS_IN_EXCEPTION_MESSAGES" value="true"/>
+    <booleanAttribute key="org.eclipse.jdt.launching.ATTR_USE_CLASSPATH_ONLY_JAR" value="false"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="se.hirt.jmc.tutorial.latencies.LatenciesManual"/>
+    <stringAttribute key="org.eclipse.jdt.launching.MODULE_NAME" value="03a_JFR_Latencies_manual"/>
+    <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="03a_JFR_Latencies_manual"/>
+    <stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-XX:StartFlightRecording"/>
+</launchConfiguration>

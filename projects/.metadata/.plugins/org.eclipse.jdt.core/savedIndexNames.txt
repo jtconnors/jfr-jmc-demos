@@ -1,0 +1,14 @@
+INDEX VERSION 1.131+D:\tmp\jmc-tutorial\projects\.metadata\.plugins\org.eclipse.jdt.core
+3991502650.index
+3554361148.index
+2249468949.index
+3619514791.index
+2405915758.index
+4285931072.index
+2013700309.index
+3210818064.index
+1865797976.index
+1671448577.index
+2515593492.index
+4013151803.index
+4066304798.index

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;se.hirt.jmc.tutorial.latencies.Latencies&apos; to &apos;LatenciesManual&apos;&#x0D;&#x0A;- Original project: &apos;03a_JFR_Latencies_manual&apos;&#x0D;&#x0A;- Original element: &apos;se.hirt.jmc.tutorial.latencies.Latencies&apos;&#x0D;&#x0A;- Renamed element: &apos;se.hirt.jmc.tutorial.latencies.LatenciesManual&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Latencies&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;se.hirt.jmc.tutorial.latencies{Latencies.java[Latencies" matchStrategy="1" name="LatenciesManual" qualified="false" references="true" similarDeclarations="false" stamp="1647647383507" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.openjdk.jmc.console.ui.notification.table.expanded.rule.groups">
+		<item value="Dummy, because IDialogSettings doesn&apos;t returns null for an empty array"/>
+		<item value="Java SE"/>
+		<item value="My Rules"/>
+		<item value="WebLogic Server 10.3 - Examples Server"/>
+	</list>
+</section>
