@@ -3,7 +3,6 @@
 
 
 ## Index
-  - [Index](#index)
   - [Introduction](#introduction)
   - [Sample videos](#sample-videos)
   - [Installation Steps](#install)
@@ -14,11 +13,11 @@
   
 This repository was cloned from Markus Hirt's github repository at [https://github.com/thegreystone/jmc-tutorial](https://github.com/thegreystone/jmc-tutorial)
 
-Among the modifications made, this repository should be entirely self-contained. It includes a JDK 17 instance, a copy of Java Mission Control 8.1 and a copy of Eclipse 4.22.0 with the Java Mission Control 8.1 plugin.  Ideally, users should be able to clone this repository and run within the demo environment without having to do much in the way of configuration, once the [installation](#install) step is completed.
+Among the modifications made, this repository has been updated to more recent components and, once properly installed, should be entirely self-contained. It includes the binary distributions for a JDK 17 installation, Java Mission Control 8.1 and Eclipse 4.22.0.  Ideally, users should be able to clone this repository and run within the demo environment without having to do much in the way of configuration.  But first, the **[installation steps](#install)** must completed.
 
 Adimittedly this is only Windows based, but could be enhanced to work in both MacOS and Linux environments with a little work.
 
-It contains [sample videos](#sample-videos) of some of the projects contained in the orignal tutorial.
+It contains [sample videos](#sample-videos) demonstrating of some of the projects contained in the orignal tutorial.
 
 <a id="markdown-sample-videos" name="samplevideos"></a>
 ## Sample videos
@@ -33,23 +32,27 @@ The following videos are available for viewing in the *media/* directory.  They 
 
 - **[4_GC-demo.mp4](media/4_GC-demo.mp4)**: *10m 37s* – Shows how to get a detailed information about a program’s garbage collection activity
 
-<a id="markdown-a-few-files-of-note" name="a-fw-files-of-note"></a>
+<a id="markdown-install" name="install"></a>
 ## Installation Steps
 
-1. To unpack and install JDK 17, JMC 8.1 and Eclipse 4.22.0, run the ```install.bat``` Windows batch file from the root directory of this repository.
-2. Start Eclipse by running the ```startEclipse.bat``` Windows batch file
-3. At startup, you'll be presented with a window to select a workspace directory.  Choose the projects/ directory found in this repository and mark the checkbox "Use this as a default and do not ask again".  A screenshot follows:
+A standard GitHub account limits the size of individual files.  In order to fit within that framework, the ZIP installation files associated with the JDK, JMC and Eclipse had to be split into smaller files.  As part of the installation process, those split files have to be reconstituted prior them being installed in this repository.
+
+1. To unpack and install JDK 17, JMC 8.1 and Eclipse 4.22.0, run the [install.bat](install.bat) Windows batch file from the root directory of this repository.
+2. Start Eclipse by running the [startEclipse.bat](startEclipse.bat) Windows batch file
+3. At startup, you'll be presented with a window to select a workspace directory.  Choose the ```projects/``` directory found in this repository and select the "Use this as a default and do not ask again" checkbox.  A screenshot follows:
    
    ![eclipse-launcher](images/eclipse-launcher.png "eclipse launcher")
-4. Install the Java Mission Control plugin to eclipse by following the steps in this [link](https://download.oracle.com/technology/products/missioncontrol/updatesites/oracle/8.1.0/ide/update-site-instructions/index.html)
+   
+4. Install the Java Mission Control plugin in eclipse by following the steps in this **[link](https://download.oracle.com/technology/products/missioncontrol/updatesites/oracle/8.1.0/ide/update-site-instructions/index.html)**
 
-
-<a id="markdown-install" name="install"></a>
+<a id="markdown-a-few-files-of-note" name="a-fw-files-of-note"></a>
 ## A Few Files of Note
 
-To unpack and install JDK 17, JMC 8.1 and Eclipse 4.22.0, run the ```install.bat``` script from the root directory of this repository.
+[install.bat](install.bat) - Used to unpack and install JDK 17, JMC 8.1 and Eclipse 4.22.0 into this repository.
 
-[setenv.bat](setenv.bat) - sets the JAVA_HOME and PATH to the local JDK directory
+[uninstall.bat](uninstall.bat) - If the need arises, this can be used to uninstall the local JDK, JMC and Eclipse versions in this repository.  It would then be possible to re-install those programs with the ```install.bat``` file.
+
+[setenv.bat](setenv.bat) - Sets the JAVA_HOME and PATH to the local JDK directory.  The [startEclipse.bat](startEclipse.bat) and [startJMC.bat](startJMC.bat) batch files source ```setenv.bat``` in order to properly set up their Java environment.
 
 [reset-env.bat](reset-env.bat) - As part of the tutorial or demonstration, source code can be modified to see how program behavior changes. This batch file resets the demo environment to its original state for the the following Eclipse projects found in the *projects/* directory:
 - 02_JFR_HotMethods
